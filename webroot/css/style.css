@@ -1,0 +1,180 @@
+body{
+	font-family: sans-serif;
+}
+
+.off-canvas-wrap {
+-webkit-backface-visibility: hidden;
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+.off-canvas-wrap.move-right > .inner-wrap {
+-ms-transform: translate(83.5%, 0);
+-webkit-transform: translate3d(83.5%, 0, 0);
+-moz-transform: translate3d(83.5%, 0, 0);
+-ms-transform: translate3d(83.5%, 0, 0);
+-o-transform: translate3d(83.5%, 0, 0);
+transform: translate3d(83.5%, 0, 0);
+}
+.inner-wrap {
+-webkit-backface-visibility: hidden;
+position: relative;
+width: 100%;
+-webkit-transition: -webkit-transform 500ms ease;
+-moz-transition: -moz-transform 500ms ease;
+-ms-transition: -ms-transform 500ms ease;
+-o-transition: -o-transform 500ms ease;
+transition: transform 500ms ease;
+}
+.inner-wrap:before, .inner-wrap:after {
+content: " ";
+display: table;
+}
+
+.off-canvas-wrap .left-off-canvas-menu {
+	-webkit-backface-visibility: hidden;
+	width: 13.88889rem;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	overflow-y: auto;
+	background: #333;
+	z-index: 1001;
+	box-sizing: content-box;
+	transition: transform 500ms ease 0s;
+	-webkit-overflow-scrolling: touch;
+	-ms-transform: translate(-100%, 0);
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	-ms-transform: translate3d(-100%, 0, 0);
+	-o-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+	left: 0;
+	width: 84%;
+}
+.off-canvas-wrap .left-off-canvas-menu hr {
+border-color: #444;
+margin: 5px 0 10px 0 !important;
+}
+.off-canvas-wrap .left-off-canvas-menu .off-canvas-list li a {
+border-bottom: none !important;
+padding: 0.3rem 1.1rem;
+}
+.off-canvas-wrap .left-off-canvas-menu .off-canvas-list hr {
+border-color: #262626;
+}
+.left-off-canvas-menu .links ul.top {
+  margin-top: 15px;
+}
+
+.left-off-canvas-menu .links ul.top li {
+  display: inline-block;
+  margin-left: 0px;
+  line-height: 1;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.left-off-canvas-menu .links ul.top li a {
+  color: #727272 !important;
+  text-transform: uppercase;
+  font-size: 11px !important;
+  padding: 5px !important;
+  font-weight: 600 !important;
+}
+
+.left-off-canvas-menu .links span {
+	display: block !important;
+	text-align: justify !important;
+	font-size: 0.9rem !important;
+	line-height: 20px;
+	color: #666;
+	padding: 0 1.1rem !important;
+}
+
+ul.pagination li.current {
+	background: #008cba;
+	color: white;
+	font-weight: bold;
+	cursor: default;
+}
+	ul.pagination li {
+	display: block;
+	padding: 0.0625rem 0.625rem 0.0625rem;
+	color: #999999;
+	border-radius: 3px;
+}
+
+div.error-message {
+	display: block;
+	padding: 0.375rem 0.5625rem 0.5625rem;
+	margin-top: -1px;
+	margin-bottom: 1rem;
+	font-size: 0.75rem;
+	font-weight: normal;
+	font-style: italic;
+	background: #f04124;
+	color: white;
+}
+
+.top-bar li i a {
+padding: 0 15px;
+line-height: 45px;
+float: left;
+}
+
+.top-bar-section .dropdown li:not(.has-form) i a:not(.button) {
+color: white;
+background: #333333;
+}
+@media only screen and (min-width: 40.063em)
+.top-bar-section li:not(.has-form) i a:not(.button) {
+padding: 0 15px;
+line-height: 45px;
+background: #333333;
+}
+@media only screen and (min-width: 40.063em)
+.top-bar-section .dropdown li i a {
+color: white;
+line-height: 1;
+white-space: nowrap;
+padding: 12px 15px;
+background: #333333;
+}
+.top-bar-section .dropdown li i a {
+font-weight: normal;
+padding: 8px 15px;
+}
+.top-bar-section ul li i > a {
+display: block;
+width: 100%;
+color: white;
+padding: 12px 0 12px 0;
+padding-left: 15px;
+font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+font-size: 0.8125rem;
+font-weight: normal;
+text-transform: none;
+background: #333333;
+}
+
+.top-bar-section .dropdown li:not(.has-form):hover i > a:not(.button) {
+	color: white;
+	background: #272727;
+}
+
+label small {
+	text-transform: none;
+	font-size: 80%;
+}
+
+@media only screen and (max-width: 767px) {
+	.pinned { width: auto; }
+	.pinned > table.files { width: 40px; }
+	div.table-wrapper div.scrollable { margin-left: 40px; }
+	thead tr { height: 48px; }
+}
+
+a.small {
+	font-size: 70%;
+}
